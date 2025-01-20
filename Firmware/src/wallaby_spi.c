@@ -150,11 +150,14 @@ void initSPI4()
 
 uint8_t SPI3_write(uint8_t data)
 {
-	SPI3->DR = data; // write data
-	while( !(SPI3->SR & SPI_I2S_FLAG_TXE) ); // wait for transmit
-	while( !(SPI3->SR & SPI_I2S_FLAG_RXNE) ); // wait for receive
-	while( SPI3->SR & SPI_I2S_FLAG_BSY ); // wait unit SPI is done
-	return SPI3->DR; // return data
+    // Wait until TX buffer empty
+    while (!(SPI3->SR & SPI_I2S_FLAG_TXE));
+    // Send
+    SPI3->DR = data;
+    // Wait until something is received
+    while (!(SPI3->SR & SPI_I2S_FLAG_RXNE));
+    // Return the received byte
+    return SPI3->DR;
 }
 
 

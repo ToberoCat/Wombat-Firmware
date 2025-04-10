@@ -304,9 +304,6 @@ void init()
     // wait a bit
     delay_us(5000);
 
-    //setupAccelMag();
-
-    //setupGyro();
     debug_printf("calling setupIMU()\r\n");
     setupIMU();
 /*

@@ -1,5 +1,9 @@
+/*
+*  Modified by: Tobias Madlberger*, Marc Prantl, Matthias, 2025
+*  * Corresponding author's email: tobias.madlberger@gmail.com
+*/
+
 #pragma once
-#include "stm32f4xx.h"
 
 void setupIMU();
 void readIMU();

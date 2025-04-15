@@ -4,6 +4,7 @@
  *  Created on: Feb 28, 2019
  *      Author: Desert
  *  Modified by: Tobias Madlberger, Marc Prantl, Matthias, 2025
+ *  * Corresponding author's email: tobias.madlberger@gmail.com
  */
 
 #include "MPU9250.h"

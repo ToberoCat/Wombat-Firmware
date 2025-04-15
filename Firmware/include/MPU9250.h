@@ -4,6 +4,7 @@
  *  Created on: 23 ��� 2018 �.
  *      Author: Max
  *  Modified by: Tobias Madlberger, Marc Prantl, Matthias, 2025
+ *  * Corresponding author's email: tobias.madlberger@gmail.com
  */
 
 #ifndef MPU925_H_
